@@ -11,15 +11,15 @@ navToggle.addEventListener('click', () => {
 
 // skill bar animation
 const skillLevels = {
-  'unity-level': 85,
+  'unity-level': 90,
   'csharp-level': 80,
-  'ar-level': 60
+  'ar-level': 50
   // add others as needed
 };
 const skillLevels2 = {
-  'teamwork-level': 85,
-  'Adaptability-level': 80,
-  'Time-level': 60
+  'teamwork-level': 90,
+  'Adaptability-level': 85,
+  'Time-level': 80
   // add others as needed
 };
 
