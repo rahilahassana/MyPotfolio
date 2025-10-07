@@ -52,3 +52,32 @@ function animateSkills() {
 
 window.addEventListener('scroll', animateSkills);
 animateSkills();
+// Get elements
+const modal = document.getElementById('videoModal');
+const videoElement = document.getElementById('projectVideo');
+const closeBtn = document.querySelector('.close');
+
+// Attach click event to all "View Project" buttons
+document.querySelectorAll('.view-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const videoSrc = button.getAttribute('data-video');
+    videoElement.src = videoSrc;
+    modal.style.display = 'block';
+  });
+});
+
+// Close modal
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+  videoElement.pause();
+  videoElement.src = "";
+});
+
+// Close on outside click
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+    videoElement.pause();
+    videoElement.src = "";
+  }
+});

@@ -92,40 +92,45 @@
 <section id="projects" class="projects container">
   <h2>Featured Projects</h2>
 
-  <!-- Metaverse Section -->
-  <div class="project-section">
-    <h3>Metaverse Projects</h3>
-    <div class="project-grid">
-      <div class="project-card">
-        <div class="project-image">
-          <img src="Images/Metaverse1.png" alt="Metaverse Project 1">
-        </div>
-        <div class="project-info">
-          <h4>Melonverse</h4>
-          <p>MelonVerse is an immersive metaverse platform designed to revolutionize digital identity, 
-interaction, and economy. It seamlessly merges blockchain powered ownership with a rich 
-social and entertainment experience, enabling users to participate in IDOs, NFT trading, virtual 
-events, and gameplay  all in one expansive virtual world.</p>
-          <a href="#" class="view-btn">View Project</a>
-        </div>
-      </div>
+<!-- Your existing project section -->
+<div class="project-section">
+  <h3>Metaverse Projects</h3>
+  <div class="project-grid">
 
-      <div class="project-card">
-        <div class="project-image">
-          <img src="Images/Metaverse1.png" alt="Metaverse Project 2">
-        </div>
-        <div class="project-info">
-          <h4>Mining Bot Metaverse</h4>
-          <p> virtual multiplayer world where users can interact, mine, and build their 
-own mining empire</p>
-          <a href="#" class="view-btn">View Project</a>
-        </div>
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="Images/Metaverse1.png" alt="Metaverse Project 1">
       </div>
+      <div class="project-info">
+        <h4>Melonverse</h4>
+        <p>MelonVerse is an immersive metaverse platform designed to revolutionize digital identity, interaction, and economy. It seamlessly merges blockchain powered ownership with a rich social and entertainment experience, enabling users to participate in IDOs, NFT trading, virtual events, and gameplay all in one expansive virtual world.</p>
+        <button class="view-btn" data-video="Videos/Metaverse.mp4">View Project</button>
+      </div>
+    </div>
 
-    
-      
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="Images/Bot.png" alt="Metaverse Project 2">
+      </div>
+      <div class="project-info">
+        <h4>Mining Bot Metaverse</h4>
+        <p> virtual multiplayer world where users can interact, mine, and build their own mining empire.</p>
+        <button class="view-btn" data-video="Videos/Metaverse.mp4">View Project</button>
+      </div>
     </div>
   </div>
+</div>
+
+<!-- Modal structure -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <video id="projectVideo" controls autoplay></video>
+  </div>
+</div>
+
 
   <!-- Games Section -->
   <div class="project-section">
@@ -137,8 +142,8 @@ own mining empire</p>
         </div>
         <div class="project-info">
           <h4>Virtual Bad Cat Chaos VS Granny Simulator Naughty</h4>
-          <p>Play as a mischievous cat creating chaos to trick Granny into kicking the other cat out.   </p>
-          <a href="https://www.amazon.com/Virtual-Chaos-Granny-Simulator-Naughty/dp/B0DYFB6W36/ref=sr_1_22?dib=eyJ2IjoiMSJ9.Y6MhPl1BMrtbCM9izvYeRnFpWXPOGslZmVRZ5we930qs2T2vWxGZCYmjfepwHiV6y4NIhulZTR8whCDTH7lYpZv_HJcpGEa44fjYBYteXS7fCiK8wB-SqVwuNmJLO4ReGAlNdwI_A8AizswSP2H-6s-_i71D67jV2-oC7GUzsIPyAG8FHj9fmxdKiQXERk5DFWtADV0o86Co43Xc7AyO6X0NPo5KNv56HQqT8_S7JUAqHeMZhuECa6pvSJlrfWiKJokIV2ByQKpzoJHt0NQp7DOlPKVVuxOo8wylTzyY4r4.m3uauamxAv1-eSLkRPvc4QV1O4strNQ26g32iXEixdg&dib_tag=se&qid=1758534801&refinements=p_4%3AZypheron&s=mobile-apps&search-type=ss&sr=1-22" class="view-btn">View Project</a>
+          <p>Play as a mischievous cat creating chaos to trick Granny into kicking the other cat out.</p>
+          <a href="https://www.amazon.com/Virtual-Chaos-Granny-Simulator-Naughty/dp/B0DYFB6W36/ref=sr_1_22?dib=eyJ2IjoiMSJ9.Y6MhPl1BMrtbCM9izvYeRnFpWXPOGslZmVRZ5we930qs2T2vWxGZCYmjfepwHiV6y4NIhulZTR8whCDTH7lYpZv_HJcpGEa44fjYBYteXS7fCiK8wB-SqVwuNmJLO4ReGAlNdwI_A8AizswSP2H-6s-_i71D67jV2-oC7GUzsIPyAG8FHj9fmxdKiQXERk5DFWtADV0o86Co43Xc7AyO6X0NPo5KNv56HQqT8_S7JUAqHeMZhuECa6pvSJlrfWiKJokIV2ByQKpzoJHt0NQp7DOlPKVVuxOo8wylTzyY4r4.m3uauamxAv1-eSLkRPvc4QV1O4strNQ26g32iXEixdg&dib_tag=se&qid=1758534801&refinements=p_4%3AZypheron&s=mobile-apps&search-type=ss&sr=1-22"  target="_blank" class="view-btn">View Project</a>
         </div>
       </div>
 
@@ -149,7 +154,7 @@ own mining empire</p>
         <div class="project-info">
           <h4>ASMR Messy Home Deep Washing House Cleaning</h4>
           <p>Experience relaxing ASMR vibes while deep cleaning a messy home to perfection.  </p>
-          <a href="https://www.amazon.com/Messy-Washing-House-Cleaning-Games/dp/B0FCMRXXGY/ref=sr_1_9?dib=eyJ2IjoiMSJ9.Y6MhPl1BMrtbCM9izvYeRnFpWXPOGslZmVRZ5we930qs2T2vWxGZCYmjfepwHiV6y4NIhulZTR8whCDTH7lYpZv_HJcpGEa44fjYBYteXS7fCiK8wB-SqVwuNmJLO4ReGAlNdwI_A8AizswSP2H-6s-_i71D67jV2-oC7GUzsIPyAG8FHj9fmxdKiQXERk5DFWtADV0o86Co43Xc7AyO6X0NPo5KNv56HQqT8_S7JUAqHeMZhuECa6pvSJlrfWiKJokIV2ByQKpzoJHt0NQp7DOlPKVVuxOo8wylTzyY4r4.m3uauamxAv1-eSLkRPvc4QV1O4strNQ26g32iXEixdg&dib_tag=se&qid=1758535774&refinements=p_4%3AZypheron&s=mobile-apps&search-type=ss&sr=1-9" class="view-btn">View Project</a>
+          <a href="https://www.amazon.com/Messy-Washing-House-Cleaning-Games/dp/B0FCMRXXGY/ref=sr_1_9?dib=eyJ2IjoiMSJ9.Y6MhPl1BMrtbCM9izvYeRnFpWXPOGslZmVRZ5we930qs2T2vWxGZCYmjfepwHiV6y4NIhulZTR8whCDTH7lYpZv_HJcpGEa44fjYBYteXS7fCiK8wB-SqVwuNmJLO4ReGAlNdwI_A8AizswSP2H-6s-_i71D67jV2-oC7GUzsIPyAG8FHj9fmxdKiQXERk5DFWtADV0o86Co43Xc7AyO6X0NPo5KNv56HQqT8_S7JUAqHeMZhuECa6pvSJlrfWiKJokIV2ByQKpzoJHt0NQp7DOlPKVVuxOo8wylTzyY4r4.m3uauamxAv1-eSLkRPvc4QV1O4strNQ26g32iXEixdg&dib_tag=se&qid=1758535774&refinements=p_4%3AZypheron&s=mobile-apps&search-type=ss&sr=1-9"  target="_blank" class="view-btn">View Project</a>
         </div>
       </div>
 
@@ -160,7 +165,7 @@ own mining empire</p>
         <div class="project-info">
           <h4>Car Parking 3D Games</h4>
           <p>Car Game Brain Training Driving school Car Games Advanced Parking 3D SimulationCar Parking 3D Games.</p>
-          <a href="https://www.amazon.com/Car-Parking-3D-Games-Simulation/dp/B0CG1VS6C3/ref=sr_1_14?dib=eyJ2IjoiMSJ9.8TjdeDfqAQFxTnUFldzSI40di3P9DKBTwToSb0QHNUk0Fvi0PSe5C25xLLg-G_9ST-WQOiHGdApGRWVblYe8sqQG-ga_EVzMdGI1AOr3pEG0HrR4-tptRR6tQHJxDpDWms4Z0ffA0s-HV5BiZS4-7yl8PKWh0p1ihJYbGepW7ZFd94YIAOZi6LZe7m8YSzpxXBJTNXT9XoaM7wJeorNqG-EU67X2Shg3525-3tpsFSL4kGgsIxZt_YvxZJ66AxfOPwzgcT2aHDYtjqHQFfMWstNcRmeAB_GRr_spPZAuP1c.hNUETZYzfljt-qaXLo6KHjK6DLMeUCodln-o3OihYYc&dib_tag=se&qid=1758536012&refinements=p_4%3AMetamelon&s=mobile-apps&search-type=ss&sr=1-14" class="view-btn">View Project</a>
+          <a href="https://www.amazon.com/Car-Parking-3D-Games-Simulation/dp/B0CG1VS6C3/ref=sr_1_14?dib=eyJ2IjoiMSJ9.8TjdeDfqAQFxTnUFldzSI40di3P9DKBTwToSb0QHNUk0Fvi0PSe5C25xLLg-G_9ST-WQOiHGdApGRWVblYe8sqQG-ga_EVzMdGI1AOr3pEG0HrR4-tptRR6tQHJxDpDWms4Z0ffA0s-HV5BiZS4-7yl8PKWh0p1ihJYbGepW7ZFd94YIAOZi6LZe7m8YSzpxXBJTNXT9XoaM7wJeorNqG-EU67X2Shg3525-3tpsFSL4kGgsIxZt_YvxZJ66AxfOPwzgcT2aHDYtjqHQFfMWstNcRmeAB_GRr_spPZAuP1c.hNUETZYzfljt-qaXLo6KHjK6DLMeUCodln-o3OihYYc&dib_tag=se&qid=1758536012&refinements=p_4%3AMetamelon&s=mobile-apps&search-type=ss&sr=1-14"  target="_blank" class="view-btn">View Project</a>
         </div>
       </div>
 
@@ -172,7 +177,7 @@ own mining empire</p>
         <div class="project-info">
           <h4>Car Parking 3D Games</h4>
           <p>Car Game Brain Training Driving school Car Games Advanced Parking 3D SimulationCar Parking 3D Games.</p>
-          <a href="https://www.amazon.com/Car-Parking-3D-Games-Simulation/dp/B0CG1VS6C3/ref=sr_1_14?dib=eyJ2IjoiMSJ9.8TjdeDfqAQFxTnUFldzSI40di3P9DKBTwToSb0QHNUk0Fvi0PSe5C25xLLg-G_9ST-WQOiHGdApGRWVblYe8sqQG-ga_EVzMdGI1AOr3pEG0HrR4-tptRR6tQHJxDpDWms4Z0ffA0s-HV5BiZS4-7yl8PKWh0p1ihJYbGepW7ZFd94YIAOZi6LZe7m8YSzpxXBJTNXT9XoaM7wJeorNqG-EU67X2Shg3525-3tpsFSL4kGgsIxZt_YvxZJ66AxfOPwzgcT2aHDYtjqHQFfMWstNcRmeAB_GRr_spPZAuP1c.hNUETZYzfljt-qaXLo6KHjK6DLMeUCodln-o3OihYYc&dib_tag=se&qid=1758536012&refinements=p_4%3AMetamelon&s=mobile-apps&search-type=ss&sr=1-14" class="view-btn">View Project</a>
+          <a href="https://www.amazon.com/Car-Parking-3D-Games-Simulation/dp/B0CG1VS6C3/ref=sr_1_14?dib=eyJ2IjoiMSJ9.8TjdeDfqAQFxTnUFldzSI40di3P9DKBTwToSb0QHNUk0Fvi0PSe5C25xLLg-G_9ST-WQOiHGdApGRWVblYe8sqQG-ga_EVzMdGI1AOr3pEG0HrR4-tptRR6tQHJxDpDWms4Z0ffA0s-HV5BiZS4-7yl8PKWh0p1ihJYbGepW7ZFd94YIAOZi6LZe7m8YSzpxXBJTNXT9XoaM7wJeorNqG-EU67X2Shg3525-3tpsFSL4kGgsIxZt_YvxZJ66AxfOPwzgcT2aHDYtjqHQFfMWstNcRmeAB_GRr_spPZAuP1c.hNUETZYzfljt-qaXLo6KHjK6DLMeUCodln-o3OihYYc&dib_tag=se&qid=1758536012&refinements=p_4%3AMetamelon&s=mobile-apps&search-type=ss&sr=1-14"  target="_blank" class="view-btn">View Project</a>
         </div>
       </div>
 
@@ -190,7 +195,7 @@ own mining empire</p>
         <div class="project-info">
           <h4>Marker Based AR project</h4>
           <p>A marker-based AR project that brings digital objects to life by scanning real-world images or patterns. Users simply point their device at a marker to unlock interactive 3D models, animations, or information in augmented reality</p>
-          <a href="#" class="view-btn">View Project</a>
+          <a href="#"  target="_blank" class="view-btn">View Project</a>
         </div>
       </div>
 
@@ -202,7 +207,7 @@ own mining empire</p>
         <div class="project-info">
           <h4>AR Face Filter</h4>
           <p>An AR face filter that uses real-time facial tracking to overlay interactive 3D effects, masks, and animations on the user’s face. It enhances selfies and videos with fun, creative, and engaging augmented reality experiences</p>
-          <a href="#" class="view-btn">View Project</a>
+          <a href="#"  target="_blank" class="view-btn">View Project</a>
         </div>
       </div>
       </div>
@@ -214,7 +219,7 @@ own mining empire</p>
 </section>
  <section id="contact" class="contact container">
   <h2>Contact Me</h2>
-  <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" class="btn">
+  <a href="https://www.linkedin.com/in/rahila-hassana-636599177" target="_blank" class="btn">
     Connect on LinkedIn
   </a>
 </section>
