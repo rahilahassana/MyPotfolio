@@ -37,6 +37,13 @@ body {
   font-weight: bold;
   color: #00ffcc;
 }
+/* Profile picture container */
+
+
+.site-header {
+  position: relative; /* needed for absolute child positioning */
+  padding-left: 120px; /* leave space for profile picture */
+}
 
 .site-nav {
   margin-left: auto;   /* pushes nav to the right */
@@ -232,6 +239,15 @@ body {
 }
 
 .view-btn {
+  align-self: center;   /* centers the button horizontally in a flex container */
+  background: #00ffcc;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.view-btnn {
   align-self: center;   /* centers the button horizontally in a flex container */
   background: #00ffcc;
   padding: 8px 16px;
