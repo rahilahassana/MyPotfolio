@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MelonVerse Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #143a30;
+      color: #e2e8f0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero {
+      background: linear-gradient(to right, #205b4b, #00ffcc);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+      border-radius: 0 0 50px 50px;
+    }
+    .gallery img {
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="text-4xl font-bold mb-3">VBTC- Virtual Bot</h1>
+    <p class="text-lg max-w-2xl mx-auto">
+      A virtual mining and trading platform where users can explore, mine, and grow their digital assets in an interactive metaverse environment.
+    </p>
+  </section>
+
+  <!-- Project Description -->
+  <section class="max-w-5xl mx-auto mt-12 p-6">
+    <h2 class="text-2xl font-semibold mb-4" style="color: #00ffcc;">About the Project</h2>
+
+    <p class="text-gray-300 leading-relaxed mb-6">
+        VBTC VirtualBot is a blockchain-based virtual mining simulator that combines gameplay with real-world crypto mechanics.  
+            Players can mine tokens, trade, and interact in real time through integrated wallet connectivity and smart contract support.  
+            The game features core multiplayer systems built with Photon Networking, along with voice and text chat for seamless  
+             communication, delivering an optimized, low-latency experience that bridges gaming and blockchain technology.
+    </p>
+
+    <p class="text-gray-300 leading-relaxed">
+      Key features include user-owned avatars, interactive multiplayer mini-games, an NFT marketplace, virtual real estate, and token-based governance. MelonVerse empowers players to truly own their digital journey.
+    </p>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="gallery max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 px-6">
+    <img src="Images/Metaverse1.png" alt="MelonVerse Image 1" class="rounded-lg shadow-lg" />
+    <img src="Images/Metaverse1.png" alt="MelonVerse Image 2" class="rounded-lg shadow-lg" />
+    <img src="Images/Metaverse1.png" alt="MelonVerse Image 3" class="rounded-lg shadow-lg" />
+    <img src="Images/Metaverse1.png" alt="MelonVerse Image 4" class="rounded-lg shadow-lg" />
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-container">
+    <video width="800" controls autoplay muted loop class="rounded-2xl shadow-xl">
+      <source src="Videos/Melonverse.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Back Button -->
+  <div class="text-center mb-10">
+  <a href="index.html" 
+     class="px-6 py-3 rounded-full shadow-md text-white transition duration-300"
+     style="background: linear-gradient(to right, #205b4b, #00ffcc); box-shadow: 0 0 15px rgba(0,255,204,0.4);">
+     ← Back to Portfolio
+  </a>
+  </div>
+
+</body>
+</html>

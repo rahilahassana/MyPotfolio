@@ -8,7 +8,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #eee;
-  background-color: #1e1e1e;
+  background-color: #205b4b;
   line-height: 1.6;
 }
 
@@ -22,7 +22,7 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  background-color: #111;
+  background-color: #14322a;
   z-index: 100;
   padding: 1rem 0;
 }
@@ -100,7 +100,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0,0,0,0.6); /* overlay for readability */
+  background-color: rgba(14, 31, 26, 0.6); /* overlay for readability */
 }
 .hero-content {
   position: relative;
@@ -204,7 +204,7 @@ body {
 }
 
 .project-card {
-  background: #111;
+  background: #17362e;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
@@ -372,4 +372,8 @@ body {
     gap: 1rem;
     padding: 1rem;
   }
+
+
+  
+
 }
