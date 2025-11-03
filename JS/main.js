@@ -13,7 +13,7 @@ navToggle.addEventListener('click', () => {
 const skillLevels = {
   'unity-level': 90,
   'csharp-level': 80,
-  'ar-level': 50
+  'ar-level': 30
   // add others as needed
 };
 const skillLevels2 = {
